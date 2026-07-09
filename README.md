@@ -2,7 +2,7 @@
 
 A high-performance, GitHub-ready static portfolio website built . This repository compiles down to optimized, plain HTML/CSS/JS with zero runtime dependencies, featuring smooth motion design, rich interactivity, and an automated deployment pipeline via GitHub Actions.
 
-🔗 **Live Demo:** [goelvibhore06.github.io/POrtfolio](https://goelvibhore06.github.io/POrtfolio)
+🔗 **Live Demo:** [goelvibhore06.github.io/POrtfolio](https://goelvibhore06.github.io/Portfolio_VibhoreGoyal)
 
 ---
 
@@ -60,4 +60,4 @@ The repository includes a pre-configured GitHub Actions workflow (`.github/workf
 The build script automatically detects paths for project repositories. If you ever need to manually force a production build locally with a custom sub-path, run:
 
 ```bash
-SITE_URL="[https://goelvibhore06.github.io/POrtfolio](https://goelvibhore06.github.io/POrtfolio)" BASE_PATH="/POrtfolio" npm run build
+SITE_URL="[https://goelvibhore06.github.io/Portfolio_VibhoreGoyal(https://goelvibhore06.github.io/Portfolio_VibhoreGoyal)" BASE_PATH="/Portfolio_VibhoreGoyal" npm run build
