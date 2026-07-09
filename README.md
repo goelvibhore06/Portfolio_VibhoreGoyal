@@ -1,82 +1,63 @@
-# Vibhore Goyal Portfolio
+# ⚡ Vibhore Goyal — Kinetic Dossier Portfolio
 
-GitHub-ready static version of the Base44 "Kinetic Dossier" portfolio for Vibhore Goyal.
+A high-performance, GitHub-ready static portfolio website built using the Base44 "Kinetic Dossier" layout. This repository compiles down to optimized, plain HTML/CSS/JS with zero runtime dependencies, featuring smooth motion design, rich interactivity, and an automated deployment pipeline via GitHub Actions.
 
-It builds into plain HTML/CSS/JS, includes the Base44 visual assets locally, and can be deployed with GitHub Pages without depending on Base44 editor previews.
+🔗 **Live Demo:** [goelvibhore06.github.io/POrtfolio](https://goelvibhore06.github.io/POrtfolio)
 
-## What Is Included
+---
 
-- One-page dossier layout with hero, selected work, about, skills, timeline, credentials, and contact sections
-- Local hero, project, and profile images copied from the Base44 portfolio
-- Smooth anchor navigation and mobile menu
-- Typewriter role animation
-- Scroll progress indicator
-- Reveal-on-scroll animations
-- Animated skill meters
-- Project card hover motion
-- Mailto-backed contact form
-- SEO metadata, Open Graph tags, JSON-LD, sitemap, robots, and `llms.txt`
-- GitHub Actions workflow for Pages deployment
+## ✨ Features & Interactivity
 
-## Commands
+- **Interactive UI:** Smooth anchor navigation, a responsive mobile menu, scroll progress indicators, and reveal-on-scroll animations.
+- **Micro-interactions:** Typewriter role animation, kinetic project card hover motions, and animated skill meters.
+- **Production Ready:** Built-in SEO metadata, Open Graph tags, JSON-LD structured data, automatic sitemap generation, `robots.txt`, and an AI-friendly `llms.txt`.
+- **Zero-Friction Forms:** Clean, mailto-backed contact form validation.
 
-```bash
-npm run build
-npm run dev
-npm run check
-```
+---
 
-`npm run build` writes the finished static site to `dist/`.
+## 🚀 Quick Start & Commands
 
-`npm run dev` builds the site and starts a local preview server.
+This project uses standard Node scripts to handle building, previewing, and auditing the production-ready static assets.
 
-`npm run check` scans generated HTML for broken local asset links.
+| Command | Description |
+| :--- | :--- |
+| `npm run dev` | Spins up a local development server with hot-reloading. |
+| `npm run build` | Compiles and minifies the static site into the `dist/` directory. |
+| `npm run check` | Audits the generated HTML to ensure no local asset links are broken. |
 
-## Edit Content
+---
 
-Most content is in:
+## ⚙️ Configuration & Content Customization
 
-```text
-src/data/site.js
-```
+To personalize the copy, links, or styles, modify the following directories:
 
-Update this file for:
+### 1. Update Content Data
+Almost all text, project details, and external links are centralized in a single data file:
+📂 `src/data/site.js`
+> **Edit this file to update:** Profile data, social handles (GitHub/LinkedIn), typewriter animation roles, projects, skill categories/percentages, credentials, and timeline milestones.
 
-- Profile, role, status, email, phone, GitHub, and LinkedIn links
-- Hero role animation labels
-- Selected projects and source links
-- About copy and contact facts
-- Skill groups and percentages
-- Experience timeline
-- Credentials and certification details
+### 2. Styling & Motion
+Visual layout and animations are managed via standard CSS:
+📂 `public/assets/styles.css`
 
-Visual styling lives in:
+### 3. Core Interactivity
+Event listeners, scroll tracking, and dynamic element animations are handled here:
+📂 `public/assets/main.js`
 
-```text
-public/assets/styles.css
-```
+---
 
-Interactivity lives in:
+## 📦 GitHub Pages Deployment
 
-```text
-public/assets/main.js
-```
+The repository includes a pre-configured GitHub Actions workflow (`.github/workflows/deploy.yml`) that automatically builds and deploys your site to GitHub Pages whenever you push changes to the `main` branch.
 
-## GitHub Pages
+### How to activate it:
+1. Push this codebase to your GitHub repository.
+2. Navigate to your repository on GitHub and click **Settings** ⚙️.
+3. In the left sidebar, click **Pages**.
+4. Under **Build and deployment -> Source**, select **GitHub Actions**.
 
-The workflow at `.github/workflows/deploy.yml` deploys automatically from `main`.
-
-1. Push this folder to GitHub.
-2. Open repository Settings -> Pages.
-3. Set Source to GitHub Actions.
-4. Push to `main` or run the workflow manually.
-
-The workflow sets the correct `BASE_PATH` for both username repos and project repos.
-
-For a manual local build with a project path:
+### Manual Production Builds
+The build script automatically detects paths for project repositories. If you ever need to manually force a production build locally with a custom sub-path, run:
 
 ```bash
-SITE_URL="https://goelvibhore06.github.io/POrtfolio" BASE_PATH="/POrtfolio" npm run build
-```
-
-For a username repo named `goelvibhore06.github.io`, keep `BASE_PATH` empty.
+SITE_URL="[https://goelvibhore06.github.io/POrtfolio](https://goelvibhore06.github.io/POrtfolio)" BASE_PATH="/POrtfolio" npm run build
