@@ -1,0 +1,21 @@
+{
+  "name": "vibhore-goyal-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A fast, SEO-friendly static portfolio for Vibhore Goyal.",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "check": "node scripts/check-links.js",
+    "dev": "npm run build && node scripts/dev-server.js",
+    "preview": "node scripts/dev-server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "static-site",
+    "seo",
+    "github-pages",
+    "frontend"
+  ],
+  "license": "MIT"
+}

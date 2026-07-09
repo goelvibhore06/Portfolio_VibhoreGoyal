@@ -1,0 +1,22 @@
+{
+  "name": "Vibhore Goyal Portfolio",
+  "short_name": "V.Goyal",
+  "description": "Kinetic dossier portfolio for Vibhore Goyal.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#08090A",
+  "theme_color": "#08090A",
+  "icons": [
+    {
+      "src": "icons/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "icons/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
