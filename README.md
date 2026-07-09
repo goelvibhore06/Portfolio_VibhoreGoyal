@@ -1,6 +1,6 @@
 # ⚡ Vibhore Goyal — Kinetic Dossier Portfolio
 
-A high-performance, GitHub-ready static portfolio website built using the Base44 "Kinetic Dossier" layout. This repository compiles down to optimized, plain HTML/CSS/JS with zero runtime dependencies, featuring smooth motion design, rich interactivity, and an automated deployment pipeline via GitHub Actions.
+A high-performance, GitHub-ready static portfolio website built . This repository compiles down to optimized, plain HTML/CSS/JS with zero runtime dependencies, featuring smooth motion design, rich interactivity, and an automated deployment pipeline via GitHub Actions.
 
 🔗 **Live Demo:** [goelvibhore06.github.io/POrtfolio](https://goelvibhore06.github.io/POrtfolio)
 
